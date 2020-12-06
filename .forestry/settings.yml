@@ -4,10 +4,19 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Site Config
+- type: document
+  path: src/_data/settings.yaml
+  label: Site Settings
+  match: "**/*"
+- type: document
+  path: src/_data/quicklinks.yaml
+  label: Quick Links
+  match: "**/*"
 - type: document
   path: src/_data/navigation.yaml
   label: Navigation
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
